@@ -32,19 +32,19 @@ namespace VPKShellIconExt
             var itemExt = new ToolStripMenuItem
             {
                 Text = "VPK Shell Ext..",
-                Image = TextureTool.ResizeTex(Properties.Resources.VPK_ICON_CONTEXT.ToBitmap(), new System.Drawing.Size(mainMenu.Height + 1, mainMenu.Height + 1))
+                Image = TextureTool.ResizeTex(Properties.Resources.VPK_ICON_CONTEXT.ToBitmap(), new System.Drawing.Size(mainMenu.Height - 2, mainMenu.Height - 2))
             };
 
             #region show settings
             var settingsMenu = new ToolStripMenuItem
             {
                 Text = "Settings",
-                Image = TextureTool.ResizeTex(Properties.Resources.VPK_ICON_CONTEXT.ToBitmap(), new System.Drawing.Size(mainMenu.Height + 1 , mainMenu.Height + 1))
+                Image = TextureTool.ResizeTex(Properties.Resources.VPK_ICON_CONTEXT.ToBitmap(), new System.Drawing.Size(mainMenu.Height - 2, mainMenu.Height - 2))
             };
             var paramMenu = new ToolStripMenuItem
             {
                 Text = "Show param.sfo Info",
-                Image = TextureTool.ResizeTex(Properties.Resources.VPK_ICON_CONTEXT.ToBitmap(), new System.Drawing.Size(mainMenu.Height + 1, mainMenu.Height + 1))
+                Image = TextureTool.ResizeTex(Properties.Resources.VPK_ICON_CONTEXT.ToBitmap(), new System.Drawing.Size(mainMenu.Height - 2, mainMenu.Height - 2))
             };
 
             settingsMenu.Click += (sender, args) => showSettingsWindow();

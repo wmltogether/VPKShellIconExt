@@ -12,6 +12,8 @@ Show warning overlay icon for unsafe eboot.bin
 
 (unsafe eboot is not a virus,but it could access dangerous system api, use on your own risk. Please don't install unsafe vpk from Unknown sources.)
 
+Show VPK Package info (param.sfo) 
+
 ###[Report]
 
 https://github.com/wmltogether/VPKShellIconExt
@@ -39,6 +41,8 @@ Simple VPK Icon Shell Extension
 对非安全eboot显示警告图标
 
 （非安全eboot并不是病毒的意思，但是这些应用会调用危险的系统api，请小心使用。千万不要安装奇怪来源的vpk，如果你不知道它是不是病毒。）
+
+显示VPK安装包信息（param.sfo）
 
 ###[问题反馈]
 

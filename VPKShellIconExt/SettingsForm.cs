@@ -29,6 +29,7 @@ namespace VPKShellIconExt
         private void buttonAbout_Click(object sender, EventArgs e)
         {
             AboutForm form = new AboutForm();
+            form.Show();
         }
 
         private void SettingsForm_Load(object sender, EventArgs e)
