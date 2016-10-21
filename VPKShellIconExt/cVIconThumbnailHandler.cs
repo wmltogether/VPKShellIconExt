@@ -10,7 +10,8 @@ using System.Linq;
 
 namespace VPKShellIconExt
 {
-    [Guid("29d76e65-1f7d-4010-92db-991011f52db2")]
+    // currently no need to generate thumbails
+    /*[Guid("29d76e65-1f7d-4010-92db-991011f52db2")]
     [ComVisible(true)]
     [ClassInterface(ClassInterfaceType.None)]
     [COMServerAssociation(AssociationType.ClassOfExtension, ".vpk")]
@@ -113,5 +114,5 @@ namespace VPKShellIconExt
                      , e.Message);
             }
         }
-    }
+    }*/
 }
