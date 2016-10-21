@@ -22,6 +22,7 @@ If you have an issue ,please tell me on Github issue page.
 ###[Credit]
 Thanks to these open source software.
 >SharpShell : https://github.com/dwmkerr/sharpshell (shell extension library for csharp)
+
 >DotNetZip : http://dotnetzip.codeplex.com/ (Zip Library)
 
 >ApkShellExt :https://github.com/kkguo/apkshellext (using his COM registery method )
@@ -49,6 +50,7 @@ Simple VPK Icon Shell Extension
 ###[Credit]
 感谢一下开源软件。
 >SharpShell : https://github.com/dwmkerr/sharpshell (shell extension library for csharp)
+
 >DotNetZip : http://dotnetzip.codeplex.com/ (Zip Library)
 
 >ApkShellExt :https://github.com/kkguo/apkshellext (using his COM registery method )
