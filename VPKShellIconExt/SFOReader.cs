@@ -126,8 +126,9 @@ namespace VPKShellIconExt
             key = Encoding.ASCII.GetString(br.ReadBytes(0x20)).Split('\0')[0];
 
             br.BaseStream.Seek(value_offset, SeekOrigin.Begin);
-            
+
             //value
+            #region switch value reading 
             switch (fmt)
             {
                 case 0x0204:
@@ -146,6 +147,7 @@ namespace VPKShellIconExt
                     value = "";
                     break;
             }
+            #endregion
         }
     }
 
