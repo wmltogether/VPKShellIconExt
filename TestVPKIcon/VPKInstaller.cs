@@ -11,6 +11,7 @@ using VPKShellIconExt;
 using System.Threading;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
+using System.IO;
 
 namespace VPKIconExtInstaller
 {
@@ -144,6 +145,11 @@ namespace VPKIconExtInstaller
             if (p != 4 && p != 6 && p != 128)
             {
                 string path = System.IO.Path.Combine(WINDIR, IntPtr.Size == 8 ? FRAMEWORK64 : FRAMEWORK, DOTNTEVERSION, REGASM);
+                if (!File.Exists(path))
+                {
+                    MessageBox.Show("Error! Can't find regasm.exe.Please reinstall .net framework 4.5");
+                    return;
+                }
                 Process process = new Process();
                 process.StartInfo.WorkingDirectory = System.IO.Path.Combine(WINDIR , IntPtr.Size == 8 ? FRAMEWORK64 : FRAMEWORK, DOTNTEVERSION);
                 process.StartInfo.FileName = REGASM;
@@ -151,6 +157,7 @@ namespace VPKIconExtInstaller
                 process.StartInfo.Arguments = string.Format(@"/codebase {0}\VPKShellIconExt.dll", System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location));
                 process.StartInfo.UseShellExecute = true;
                 process.Start();
+                process.WaitForExit();
                 MessageBox.Show("OK! VPKShellIconExt.dll Installed!\n Please do not delete this installer.");
 
             }
@@ -175,6 +182,7 @@ namespace VPKIconExtInstaller
                 process.StartInfo.UseShellExecute = true;
 
                 process.Start();
+                process.WaitForExit();
                 MessageBox.Show("Extension Uninstalled!\n The VPKShellIconExt.dll will be unloaded on next restart.");
 
             }
