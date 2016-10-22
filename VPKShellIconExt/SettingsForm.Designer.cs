@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelAbout = new System.Windows.Forms.Label();
+            this.labelVersion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,11 +94,20 @@
             this.labelAbout.TabIndex = 5;
             this.labelAbout.Text = "Simple VPK icon Extension";
             // 
+            // labelVersion
+            // 
+            this.labelVersion.AutoSize = true;
+            this.labelVersion.Location = new System.Drawing.Point(13, 256);
+            this.labelVersion.Name = "labelVersion";
+            this.labelVersion.Size = new System.Drawing.Size(0, 12);
+            this.labelVersion.TabIndex = 6;
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 278);
+            this.Controls.Add(this.labelVersion);
             this.Controls.Add(this.labelAbout);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -121,5 +131,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelAbout;
+        private System.Windows.Forms.Label labelVersion;
     }
 }

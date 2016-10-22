@@ -131,6 +131,7 @@ Display psvita vpk icon in explorer
 Display vpk type (mai or vitamin)
 Show warning overlay icon for unsafe eboot.bin
 (unsafe eboot is not a virus,but it could access dangerous system api, use on your own risk. Please don't install unsafe vpk from Unknown sources.)
+Show package info (param.sfo) in Folder Info Tip or Context Menu;
 
 [Report]
 
@@ -155,6 +156,7 @@ Simple VPK Icon Shell Extension
 显示VPK类型 (mai 或者 vitamin)
 对非安全eboot显示警告图标
 （非安全eboot并不是病毒的意思，但是这些应用会调用危险的系统api，请小心使用。千万不要安装奇怪来源的vpk，如果你不知道它是不是病毒。）
+在右键菜单或者文件夹悬停时显示游戏信息（param.sfo）
 
 [问题反馈]
 
@@ -163,7 +165,7 @@ https://github.com/wmltogether/VPKShellIconExt
 
 
 [Credit]
-感谢一下开源软件。
+感谢以下开源软件。
 &gt;SharpShell : https://github.com/dwmkerr/sharpshell (shell extension library for csharp)
 &gt;DotNetZip : http://dotnetzip.codeplex.com/ (Zip Library)
 

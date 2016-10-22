@@ -35,6 +35,7 @@ namespace VPKShellIconExt
         private void SettingsForm_Load(object sender, EventArgs e)
         {
             this.labelAbout.Text = "Simple VPK icon extension.\nCopyright (c) 2016 wmltogether ";
+            this.labelVersion.Text = string.Format("{0}\n{1}", AppConst.AppVersion, System.Environment.OSVersion.VersionString);
         }
     }
 }

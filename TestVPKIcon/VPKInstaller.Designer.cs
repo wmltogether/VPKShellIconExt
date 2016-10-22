@@ -41,8 +41,9 @@
             this.繁体中文ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.debugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.debugVPKLoaderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelDescription = new System.Windows.Forms.Label();
             this.debugVPKSFOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelDescription = new System.Windows.Forms.Label();
+            this.labelVersion = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -152,6 +153,13 @@
             this.debugVPKLoaderToolStripMenuItem.Text = "Debug VPK Loader";
             this.debugVPKLoaderToolStripMenuItem.Click += new System.EventHandler(this.debugVPKLoaderToolStripMenuItem_Click);
             // 
+            // debugVPKSFOToolStripMenuItem
+            // 
+            this.debugVPKSFOToolStripMenuItem.Name = "debugVPKSFOToolStripMenuItem";
+            this.debugVPKSFOToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.debugVPKSFOToolStripMenuItem.Text = "Debug VPK SFO";
+            this.debugVPKSFOToolStripMenuItem.Click += new System.EventHandler(this.debugVPKSFOToolStripMenuItem_Click);
+            // 
             // labelDescription
             // 
             this.labelDescription.AutoSize = true;
@@ -161,18 +169,21 @@
             this.labelDescription.TabIndex = 4;
             this.labelDescription.Text = "VPK Icon Shell Extension Installer";
             // 
-            // debugVPKSFOToolStripMenuItem
+            // labelVersion
             // 
-            this.debugVPKSFOToolStripMenuItem.Name = "debugVPKSFOToolStripMenuItem";
-            this.debugVPKSFOToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.debugVPKSFOToolStripMenuItem.Text = "Debug VPK SFO";
-            this.debugVPKSFOToolStripMenuItem.Click += new System.EventHandler(this.debugVPKSFOToolStripMenuItem_Click);
+            this.labelVersion.AutoSize = true;
+            this.labelVersion.Location = new System.Drawing.Point(12, 237);
+            this.labelVersion.Name = "labelVersion";
+            this.labelVersion.Size = new System.Drawing.Size(11, 12);
+            this.labelVersion.TabIndex = 5;
+            this.labelVersion.Text = " ";
             // 
             // VPKInstaller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(520, 261);
+            this.Controls.Add(this.labelVersion);
             this.Controls.Add(this.labelDescription);
             this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.buttonUninstall);
@@ -206,6 +217,7 @@
         private System.Windows.Forms.ToolStripMenuItem debugToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem debugVPKLoaderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem debugVPKSFOToolStripMenuItem;
+        private System.Windows.Forms.Label labelVersion;
     }
 }
 

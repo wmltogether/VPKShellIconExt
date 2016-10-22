@@ -15,6 +15,7 @@ namespace VPKShellIconExt
     [ClassInterface(ClassInterfaceType.None)]
     [COMServerAssociation(AssociationType.ClassOfExtension, ".vpk")]
 
+
     public class cVIconHandler : SharpIconHandler
     {
         protected override Icon GetIcon(bool smallIcon, uint iconSize)
@@ -86,7 +87,7 @@ namespace VPKShellIconExt
                     return null;
                 }
             }
-
+            GC.Collect();
             return Icon.FromHandle(TextureTool.ResizeTex(m_icon, new Size((int)iconSize, (int)iconSize)).GetHicon());
         }
 

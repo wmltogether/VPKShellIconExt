@@ -18,6 +18,13 @@ namespace VPKShellIconExt
             return new Bitmap(image);
         }
 
+        public static Bitmap GetBitmapFromFile(string filename)
+        {
+            
+            Image image = Image.FromFile(filename);
+            return new Bitmap(image);
+        }
+
         public static Bitmap ResizeTex(Bitmap input, Size size)
         {
             if (input != null)

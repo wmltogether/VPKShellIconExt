@@ -45,6 +45,7 @@ namespace VPKIconExtInstaller
         private void VPKInstaller_Load(object sender, EventArgs e)
         {
             initLanguage();
+            this.labelVersion.Text = Application.ProductVersion.ToString();
 #if DEBUG
             this.debugToolStripMenuItem.Text = "Debug";
             this.debugToolStripMenuItem.Enabled = true;

@@ -65,7 +65,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppConst.cs" />
     <Compile Include="cVIconContextMenu.cs" />
+    <Compile Include="cVIconFolderInfoTipHandler.cs" />
+    <Compile Include="cVIconFolderHandler.cs" />
     <Compile Include="ParamForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +152,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\VPK_ICON_CONTEXT.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VPK_SIG_FOLDER.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
