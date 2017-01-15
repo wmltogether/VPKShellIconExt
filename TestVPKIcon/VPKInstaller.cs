@@ -154,7 +154,7 @@ namespace VPKIconExtInstaller
                 process.StartInfo.WorkingDirectory = System.IO.Path.Combine(WINDIR , IntPtr.Size == 8 ? FRAMEWORK64 : FRAMEWORK, DOTNTEVERSION);
                 process.StartInfo.FileName = REGASM;
 
-                process.StartInfo.Arguments = string.Format(@"/codebase {0}\VPKShellIconExt.dll", System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location));
+                process.StartInfo.Arguments = string.Format(@"/codebase ""{0}\VPKShellIconExt.dll""", System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location));
                 process.StartInfo.UseShellExecute = true;
                 process.Start();
                 process.WaitForExit();
@@ -178,7 +178,7 @@ namespace VPKIconExtInstaller
                 Process process = new Process();
                 process.StartInfo.WorkingDirectory = System.IO.Path.Combine(WINDIR, IntPtr.Size == 8 ? FRAMEWORK64 : FRAMEWORK, DOTNTEVERSION);
                 process.StartInfo.FileName = REGASM;
-                process.StartInfo.Arguments = string.Format(@"/unregister {0}\VPKShellIconExt.dll", System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location));
+                process.StartInfo.Arguments = string.Format(@"/unregister ""{0}\VPKShellIconExt.dll""", System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location));
                 process.StartInfo.UseShellExecute = true;
 
                 process.Start();
